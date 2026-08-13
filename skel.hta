@@ -1,0 +1,26 @@
+<hta:application border="none" caption="no" scroll="no">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: black;
+    }
+</style>
+
+<canvas id="c" width="320" height="240"></canvas>
+
+<script>
+    window.resizeTo(320, 240);
+
+    var canvas = document.getElementById("c");
+    var ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "blue";
+    ctx.fillRect(0, 0, 320, 240);
+
+    ctx.fillStyle = "red";
+    ctx.fillRect(50, 50, 40, 40);
+</script>
