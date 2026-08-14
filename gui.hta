@@ -1,13 +1,40 @@
+
 <hta:application border="thin" caption="yes" scroll="no">
-<meat http-equiv="X-UA-Compatible" content="IE-11">
+<meta http-equiv="X-UA-Compatible" content="IE=11">
 
 <title>Meine erste App</title>
 
 <style>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #202030;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    color: white;
+    background: #3498db;
+    text-align: center;
+    line-height: 80px;
+}	
 </style>
 
 <body>
-    <h1>Hallo Welt</h1>
+    <div class="container">
+        <div class="card">Eins</div>
+        <div class="card">Zwei</div>
+        <div class="card">Drei</div>
+    </div>
 </body>
 
 <script>
